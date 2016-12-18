@@ -95,7 +95,7 @@ object OrderSummary {
       })
     })
 
-    sc.setCheckpointDir("checkpoint/")
+    sc.setCheckpointDir("target/checkpoint/")
     ssc.start()
 
     //Why does the process stop when I don't sleep here? I don't always need to sleep in a Scala App.
