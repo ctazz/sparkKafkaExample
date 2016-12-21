@@ -64,3 +64,9 @@ You can see this project's output like this (be patient, it takes a few seconds 
 bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic metrics
 and if you're running into problems, check 
 bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic orders
+
+@@@@@@@@@@If you just want to run WritesJsonArrayStoredInFileToKafka@@@@@@@@@
+Just follow the instructions above to set up a Kafka environment and a topic
+Run this command to compile this project
+sbt clean compile
+And run WritesJsonArrayStoredInFileToKafka with an IDE or by making it a main class inside the build.sbt file

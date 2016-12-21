@@ -43,7 +43,7 @@ object OrderSummary {
     //TODO  JodaTime  SimpleDateFormat is not thread safe!
     import java.text.SimpleDateFormat
 
-    val orders = kafkaStream.flatMap { case (kafkaKey, line) => {
+    val orders: DStream[Order] = kafkaStream.flatMap { case (kafkaKey, line) => {
       println(s"kafkaKey is $kafkaKey  line is $line")
       val dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
       val s = line.split(",")
