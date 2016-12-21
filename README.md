@@ -1,7 +1,8 @@
 Sorry, no time to mess with markdown format
 
-Start with example from Spark In Action
-Use Spark 1.6.2 instead of Spark 2.x. And create a project rather than run from Spark console.
+Started with example from Spark In Action
+Used Spark 1.6.2 instead of Spark 2.x. And created a project rather than run from Spark console.
+Also wrote a tool for reading a Json array from a file and writing elements of the Json array to Kafka.
 
 Setup kafka
 http://kafka.apache.org/downloads.html
